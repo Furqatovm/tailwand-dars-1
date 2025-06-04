@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwand css</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="font-serif">
     <header class="container mx-auto flex justify-between items-center text-[#22202E] p-[1.5rem]  border-b-2 border-[#0000001A] col-span-full">
@@ -132,29 +133,43 @@
     </section>
 
 
-    <section class="grid grid-cols-4">
-        <h2 class="text-[2rem] text-[#2A254B] text-left col-span-full">Our popular products</h2>
-        <div>
-            <div class="flex flex-col gap-[1rem] col-start-1 col-end-3">
+    <section class=" p-[1.5rem]">
+        <h2 class="text-[2rem] text-[#2A254B] text-left">Our popular products</h2>
+        <div class="flex gap-[2rem] overflow-x-auto scrollbar-hide">
+            <div class="flex flex-col gap-[1rem] min-w-[200px]">
                 <img class="w-[100%]" src="./assets/cardimage/soha.jpg" alt="">
                 <h4 class="text-[20px] text-[#2A254B] leading-[100%] my-[20px]">The Poplar suede sofa</h4>
                 <span class="text-[18px] text-[#2A254B]">£980</span>
             </div>
 
-            <div class="flex flex-col gap-[1rem] col-start-3 col-end-4">
+            <div class="flex flex-col gap-[1rem] min-w-[200px]">
                 <img class="w-[100%]" src="./assets/cardimage/soha.jpg" alt="">
                 <h4 class="text-[20px] text-[#2A254B] leading-[100%] my-[20px]">The Poplar suede sofa</h4>
                 <span class="text-[18px] text-[#2A254B]">£980</span>
             </div>
-            <div class="flex flex-col gap-[1rem] col-start-4 col-end-5">
+            <div class="flex flex-col gap-[1rem] min-w-[200px]">
                 <img class="w-[100%]" src="./assets/cardimage/soha.jpg" alt="">
                 <h4 class="text-[20px] text-[#2A254B] leading-[100%] my-[20px]">The Poplar suede sofa</h4>
                 <span class="text-[18px] text-[#2A254B]">£980</span>
             </div>
 
         </div>
+        <button class="p-[1rem] text-[1rem] text-[#2A254B] bg-[#F9F9F9] col-span-full w-[100%] row-start-3 row-end-4 my-[2rem]">View collection</button> 
+
         
         
+    </section>
+
+
+    <section class="my-[2rem]">
+        <div class="p-[1.5rem] flex flex-col gap-[2rem]">
+            <h2 class="text-[20px] text-[#2A254B] leading-[140%]">Join the club and get the benefits</h2>
+            <p class="text-[14px] text-[#505977] leading-[150%]">Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more</p>
+            <form class="w-[100%] flex">
+                <input class="bg-[#F9F9F9] w-60% px-[2rem] py-[17px] outline-none text-[#2A254B] text-[14px]" type="email" name="submit" id="submit" placeholder="your@email.com" autocomplete="off">
+                <input type="submit" class="w-40% px-[2rem] py-[1rem] bg-[#2A254B] text-[white]">
+            </form>
+        </div>
     </section>
 
 
