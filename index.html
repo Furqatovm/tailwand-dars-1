@@ -6,27 +6,158 @@
     <title>Tailwand css</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <header>
-        <nav class="container mx-auto flex justify-between items-center">
-            <h3 class="text-[3rem] text-[#000000] font-[700]">NOICLAND</h3>
-            <ul class="flex gap-[40px]">
-                <li class="text-[14px] text-[#000000] font-normal">Home</li>
-                <li class="text-[14px] text-[#000000] font-normal">Home</li>
-                <li class="text-[14px] text-[#000000] font-normal">Home</li>
-            </ul>
-        </nav>
+<body class="font-serif">
+    <header class="container mx-auto flex justify-between items-center text-[#22202E] p-[1.5rem]  border-b-2 border-[#0000001A] col-span-full">
+        <div class="flex gap-[1rem] item-center w-[auto] hidden md:block">
+            <svg class="block" id="search" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentcolor"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+        </div>
+        <h3 class="text-[#22202E] text-[1.5rem]">Avion</h3>
+        <div class="flex items-center gap-[1rem] hidden md:flex">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentcolor"><path d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentcolor"><path d="M480-480q-60 0-102-42t-42-102q0-60 42-102t102-42q60 0 102 42t42 102q0 60-42 102t-102 42ZM192-192v-96q0-23 12.5-43.5T239-366q55-32 116.29-49 61.29-17 124.5-17t124.71 17Q666-398 721-366q22 13 34.5 34t12.5 44v96H192Zm72-72h432v-24q0-5.18-3.03-9.41-3.02-4.24-7.97-6.59-46-28-98-42t-107-14q-55 0-107 14t-98 42q-5 4-8 7.72-3 3.73-3 8.28v24Zm216.21-288Q510-552 531-573.21t21-51Q552-654 530.79-675t-51-21Q450-696 429-674.79t-21 51Q408-594 429.21-573t51 21Zm-.21-72Zm0 360Z"/></svg>
+        </div>
+        <div class="flex gap-[1rem] item- w-[auto] md:hidden">
+            <svg class="block" id="search" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentcolor"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentcolor"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </div>
     </header>
-    <div class="flex justify-between container mx-auto  mt-[70px]">
-        <div class="w-[60%]">
-            <img src="./IMAGE (10).png" alt="" class="w-full animate-pulse">
+
+    <nav class="max-w-[620px] mx-auto flex gap-[2rem] py-[20px] hidden md:flex">
+        <a href="#" class="text-[1rem] text-[#726E8D] no-underline">Plant pots</a>
+        <a href="#"class="text-[1rem] text-[#726E8D] no-underline">Ceramics</a>
+        <a href="#"class="text-[1rem] text-[#726E8D] no-underline">Tables</a>
+        <a href="#"class="text-[1rem] text-[#726E8D] no-underline">Chairs</a>
+        <a href="#"class="text-[1rem] text-[#726E8D] no-underline">Crockery</a>
+        <a href="#"class="text-[1rem] text-[#726E8D] no-underline">Tableware</a>
+        <a href="#"class="text-[1rem] text-[#726E8D] no-underline">Cutlery</a>
+    </nav>
+
+    <section class="col-span-full">
+        <div class="bg-[#2A254B] p-[1.5rem] pt-[2rem] grid grid-rows-3 gap-[1rem] justify-between flex flex-col justify-between gap-[4rem]">
+
+            <div class="flex flex-col gap-[2rem]">
+                <h1 class="text-[2rem] text-[white] leading-[140%] row-start-1 row-end-2">The furniture brand for the future, with timeless designs</h1>
+                <button class="p-[1rem] text-[1rem] text-[white] bg-[#494465] col-span-full w-[100%] row-start-3 row-end-4">View collection</button> 
+            </div>
+            <p class="text-[18px] text-[white] leading-[150%] row-start-2 row-end-3 [text-align-justify]">A new era in eco friendly furniture with Avelon, the French luxury retail brand
+                with nice fonts, tasteful colors and a beautiful way to display things digitally 
+                using modern web technologies.</p>
         </div>
-        <div class="flex flex-col gap-[40px]">
-            <span class="text-[#999999] text-[10px] uppercase">Illustration</span>
-            <h1 class="text-[36px] uppercase text-[#000000] leading-[42px] max-w-[430px]">Japan House opens in mountainside to foster peak creativity.</h1>
-            <p class="text-[#666666] text-[1rem] max-w-[420px] leading-[24px]">Enim omittam qui id, ex quo atqui dictas complectitur. Nec ad timeam accusata, hinc justo falli id eum, ferri novum molestie eos cu.</p>
-            <strong>By Reta Torphy</strong>
+        <div class="hidden">
+            <img class="w-[100%]" src="./assets/Right Image.png" alt="">
         </div>
-    </div>
+
+    </section>
+
+
+    <section class="p-[1.5rem]">
+        <h2 class="text-[20px] text-[#2A254B] leading-[140%] grid-cols-full">What makes our brand different</h2>
+        <div class="my-[2rem] flex flex-col gap-[2.5rem]">
+            <div class="flex flex-col gap-[1rem]">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white" style="mix-blend-mode:multiply"/>
+                    <path d="M12 12H3V13.5H12V12Z" fill="#2A254B"/>
+                    <path d="M9 8.25H1.5V9.75H9V8.25Z" fill="#2A254B"/>
+                    <path d="M22.4392 12.4548L20.1892 7.2048C20.1315 7.06979 20.0355 6.95469 19.9129 6.87383C19.7904 6.79297 19.6468 6.74991 19.5 6.75H17.25V5.25C17.25 5.05109 17.171 4.86032 17.0303 4.71967C16.8897 4.57902 16.6989 4.5 16.5 4.5H4.5V6H15.75V15.4172C15.4083 15.6156 15.1092 15.8797 14.8701 16.1943C14.6309 16.5089 14.4564 16.8677 14.3566 17.25H9.64342C9.46088 16.543 9.02675 15.9269 8.42242 15.517C7.81809 15.1072 7.08504 14.9319 6.36067 15.0239C5.63631 15.1159 4.97038 15.4689 4.48768 16.0168C4.00499 16.5647 3.73869 17.2698 3.73869 18C3.73869 18.7302 4.00499 19.4353 4.48768 19.9832C4.97038 20.5311 5.63631 20.8841 6.36067 20.9761C7.08504 21.0681 7.81809 20.8928 8.42242 20.483C9.02675 20.0731 9.46088 19.457 9.64342 18.75H14.3566C14.5201 19.3933 14.8934 19.9638 15.4174 20.3712C15.9414 20.7787 16.5862 20.9999 17.25 20.9999C17.9138 20.9999 18.5586 20.7787 19.0826 20.3712C19.6066 19.9638 19.9799 19.3933 20.1434 18.75H21.75C21.9489 18.75 22.1397 18.671 22.2803 18.5303C22.421 18.3897 22.5 18.1989 22.5 18V12.75C22.5 12.6485 22.4793 12.548 22.4392 12.4548ZM6.75 19.5C6.45333 19.5 6.16332 19.412 5.91665 19.2472C5.66997 19.0824 5.47771 18.8481 5.36418 18.574C5.25065 18.2999 5.22094 17.9983 5.27882 17.7074C5.3367 17.4164 5.47956 17.1491 5.68934 16.9393C5.89912 16.7296 6.16639 16.5867 6.45736 16.5288C6.74834 16.4709 7.04994 16.5006 7.32403 16.6142C7.59811 16.7277 7.83238 16.92 7.9972 17.1666C8.16203 17.4133 8.25 17.7033 8.25 18C8.24954 18.3977 8.09136 18.779 7.81016 19.0602C7.52895 19.3414 7.14768 19.4995 6.75 19.5ZM17.25 8.25H19.0056L20.6129 12H17.25V8.25ZM17.25 19.5C16.9533 19.5 16.6633 19.412 16.4166 19.2472C16.17 19.0824 15.9777 18.8481 15.8642 18.574C15.7506 18.2999 15.7209 17.9983 15.7788 17.7074C15.8367 17.4164 15.9796 17.1491 16.1893 16.9393C16.3991 16.7296 16.6664 16.5867 16.9574 16.5288C17.2483 16.4709 17.5499 16.5006 17.824 16.6142C18.0981 16.7277 18.3324 16.92 18.4972 17.1666C18.662 17.4133 18.75 17.7033 18.75 18C18.7495 18.3977 18.5914 18.779 18.3102 19.0602C18.0289 19.3414 17.6477 19.4995 17.25 19.5ZM21 17.25H20.1434C19.9782 16.6076 19.6045 16.0382 19.0808 15.631C18.5572 15.2239 17.9133 15.0019 17.25 15V13.5H21V17.25Z" fill="#2A254B"/>
+                    </svg>
+                    <h4 class="text-[1rem] text-[#2A254B] leading-[140%]">Next day as standard</h4>
+                    <p class="text-[14px] text-[#2A254B] leading-[140%]">Order before 3pm and get your order the next day as standard</p>                    
+            </div>
+            <div class="flex flex-col gap-[1rem]">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white" style="mix-blend-mode:multiply"/>
+                    <path d="M12 12H3V13.5H12V12Z" fill="#2A254B"/>
+                    <path d="M9 8.25H1.5V9.75H9V8.25Z" fill="#2A254B"/>
+                    <path d="M22.4392 12.4548L20.1892 7.2048C20.1315 7.06979 20.0355 6.95469 19.9129 6.87383C19.7904 6.79297 19.6468 6.74991 19.5 6.75H17.25V5.25C17.25 5.05109 17.171 4.86032 17.0303 4.71967C16.8897 4.57902 16.6989 4.5 16.5 4.5H4.5V6H15.75V15.4172C15.4083 15.6156 15.1092 15.8797 14.8701 16.1943C14.6309 16.5089 14.4564 16.8677 14.3566 17.25H9.64342C9.46088 16.543 9.02675 15.9269 8.42242 15.517C7.81809 15.1072 7.08504 14.9319 6.36067 15.0239C5.63631 15.1159 4.97038 15.4689 4.48768 16.0168C4.00499 16.5647 3.73869 17.2698 3.73869 18C3.73869 18.7302 4.00499 19.4353 4.48768 19.9832C4.97038 20.5311 5.63631 20.8841 6.36067 20.9761C7.08504 21.0681 7.81809 20.8928 8.42242 20.483C9.02675 20.0731 9.46088 19.457 9.64342 18.75H14.3566C14.5201 19.3933 14.8934 19.9638 15.4174 20.3712C15.9414 20.7787 16.5862 20.9999 17.25 20.9999C17.9138 20.9999 18.5586 20.7787 19.0826 20.3712C19.6066 19.9638 19.9799 19.3933 20.1434 18.75H21.75C21.9489 18.75 22.1397 18.671 22.2803 18.5303C22.421 18.3897 22.5 18.1989 22.5 18V12.75C22.5 12.6485 22.4793 12.548 22.4392 12.4548ZM6.75 19.5C6.45333 19.5 6.16332 19.412 5.91665 19.2472C5.66997 19.0824 5.47771 18.8481 5.36418 18.574C5.25065 18.2999 5.22094 17.9983 5.27882 17.7074C5.3367 17.4164 5.47956 17.1491 5.68934 16.9393C5.89912 16.7296 6.16639 16.5867 6.45736 16.5288C6.74834 16.4709 7.04994 16.5006 7.32403 16.6142C7.59811 16.7277 7.83238 16.92 7.9972 17.1666C8.16203 17.4133 8.25 17.7033 8.25 18C8.24954 18.3977 8.09136 18.779 7.81016 19.0602C7.52895 19.3414 7.14768 19.4995 6.75 19.5ZM17.25 8.25H19.0056L20.6129 12H17.25V8.25ZM17.25 19.5C16.9533 19.5 16.6633 19.412 16.4166 19.2472C16.17 19.0824 15.9777 18.8481 15.8642 18.574C15.7506 18.2999 15.7209 17.9983 15.7788 17.7074C15.8367 17.4164 15.9796 17.1491 16.1893 16.9393C16.3991 16.7296 16.6664 16.5867 16.9574 16.5288C17.2483 16.4709 17.5499 16.5006 17.824 16.6142C18.0981 16.7277 18.3324 16.92 18.4972 17.1666C18.662 17.4133 18.75 17.7033 18.75 18C18.7495 18.3977 18.5914 18.779 18.3102 19.0602C18.0289 19.3414 17.6477 19.4995 17.25 19.5ZM21 17.25H20.1434C19.9782 16.6076 19.6045 16.0382 19.0808 15.631C18.5572 15.2239 17.9133 15.0019 17.25 15V13.5H21V17.25Z" fill="#2A254B"/>
+                    </svg>
+                    <h4 class="text-[1rem] text-[#2A254B] leading-[140%]">Next day as standard</h4>
+                    <p class="text-[14px] text-[#2A254B] leading-[140%]">Order before 3pm and get your order the next day as standard</p>                    
+            </div>
+
+            <div class="flex flex-col gap-[1rem]">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white" style="mix-blend-mode:multiply"/>
+                    <path d="M12 12H3V13.5H12V12Z" fill="#2A254B"/>
+                    <path d="M9 8.25H1.5V9.75H9V8.25Z" fill="#2A254B"/>
+                    <path d="M22.4392 12.4548L20.1892 7.2048C20.1315 7.06979 20.0355 6.95469 19.9129 6.87383C19.7904 6.79297 19.6468 6.74991 19.5 6.75H17.25V5.25C17.25 5.05109 17.171 4.86032 17.0303 4.71967C16.8897 4.57902 16.6989 4.5 16.5 4.5H4.5V6H15.75V15.4172C15.4083 15.6156 15.1092 15.8797 14.8701 16.1943C14.6309 16.5089 14.4564 16.8677 14.3566 17.25H9.64342C9.46088 16.543 9.02675 15.9269 8.42242 15.517C7.81809 15.1072 7.08504 14.9319 6.36067 15.0239C5.63631 15.1159 4.97038 15.4689 4.48768 16.0168C4.00499 16.5647 3.73869 17.2698 3.73869 18C3.73869 18.7302 4.00499 19.4353 4.48768 19.9832C4.97038 20.5311 5.63631 20.8841 6.36067 20.9761C7.08504 21.0681 7.81809 20.8928 8.42242 20.483C9.02675 20.0731 9.46088 19.457 9.64342 18.75H14.3566C14.5201 19.3933 14.8934 19.9638 15.4174 20.3712C15.9414 20.7787 16.5862 20.9999 17.25 20.9999C17.9138 20.9999 18.5586 20.7787 19.0826 20.3712C19.6066 19.9638 19.9799 19.3933 20.1434 18.75H21.75C21.9489 18.75 22.1397 18.671 22.2803 18.5303C22.421 18.3897 22.5 18.1989 22.5 18V12.75C22.5 12.6485 22.4793 12.548 22.4392 12.4548ZM6.75 19.5C6.45333 19.5 6.16332 19.412 5.91665 19.2472C5.66997 19.0824 5.47771 18.8481 5.36418 18.574C5.25065 18.2999 5.22094 17.9983 5.27882 17.7074C5.3367 17.4164 5.47956 17.1491 5.68934 16.9393C5.89912 16.7296 6.16639 16.5867 6.45736 16.5288C6.74834 16.4709 7.04994 16.5006 7.32403 16.6142C7.59811 16.7277 7.83238 16.92 7.9972 17.1666C8.16203 17.4133 8.25 17.7033 8.25 18C8.24954 18.3977 8.09136 18.779 7.81016 19.0602C7.52895 19.3414 7.14768 19.4995 6.75 19.5ZM17.25 8.25H19.0056L20.6129 12H17.25V8.25ZM17.25 19.5C16.9533 19.5 16.6633 19.412 16.4166 19.2472C16.17 19.0824 15.9777 18.8481 15.8642 18.574C15.7506 18.2999 15.7209 17.9983 15.7788 17.7074C15.8367 17.4164 15.9796 17.1491 16.1893 16.9393C16.3991 16.7296 16.6664 16.5867 16.9574 16.5288C17.2483 16.4709 17.5499 16.5006 17.824 16.6142C18.0981 16.7277 18.3324 16.92 18.4972 17.1666C18.662 17.4133 18.75 17.7033 18.75 18C18.7495 18.3977 18.5914 18.779 18.3102 19.0602C18.0289 19.3414 17.6477 19.4995 17.25 19.5ZM21 17.25H20.1434C19.9782 16.6076 19.6045 16.0382 19.0808 15.631C18.5572 15.2239 17.9133 15.0019 17.25 15V13.5H21V17.25Z" fill="#2A254B"/>
+                    </svg>
+                    <h4 class="text-[1rem] text-[#2A254B] leading-[140%]">Next day as standard</h4>
+                    <p class="text-[14px] text-[#2A254B] leading-[140%]">Order before 3pm and get your order the next day as standard</p>                    
+            </div>
+
+            <div class="flex flex-col gap-[1rem]">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white" style="mix-blend-mode:multiply"/>
+                    <path d="M12 12H3V13.5H12V12Z" fill="#2A254B"/>
+                    <path d="M9 8.25H1.5V9.75H9V8.25Z" fill="#2A254B"/>
+                    <path d="M22.4392 12.4548L20.1892 7.2048C20.1315 7.06979 20.0355 6.95469 19.9129 6.87383C19.7904 6.79297 19.6468 6.74991 19.5 6.75H17.25V5.25C17.25 5.05109 17.171 4.86032 17.0303 4.71967C16.8897 4.57902 16.6989 4.5 16.5 4.5H4.5V6H15.75V15.4172C15.4083 15.6156 15.1092 15.8797 14.8701 16.1943C14.6309 16.5089 14.4564 16.8677 14.3566 17.25H9.64342C9.46088 16.543 9.02675 15.9269 8.42242 15.517C7.81809 15.1072 7.08504 14.9319 6.36067 15.0239C5.63631 15.1159 4.97038 15.4689 4.48768 16.0168C4.00499 16.5647 3.73869 17.2698 3.73869 18C3.73869 18.7302 4.00499 19.4353 4.48768 19.9832C4.97038 20.5311 5.63631 20.8841 6.36067 20.9761C7.08504 21.0681 7.81809 20.8928 8.42242 20.483C9.02675 20.0731 9.46088 19.457 9.64342 18.75H14.3566C14.5201 19.3933 14.8934 19.9638 15.4174 20.3712C15.9414 20.7787 16.5862 20.9999 17.25 20.9999C17.9138 20.9999 18.5586 20.7787 19.0826 20.3712C19.6066 19.9638 19.9799 19.3933 20.1434 18.75H21.75C21.9489 18.75 22.1397 18.671 22.2803 18.5303C22.421 18.3897 22.5 18.1989 22.5 18V12.75C22.5 12.6485 22.4793 12.548 22.4392 12.4548ZM6.75 19.5C6.45333 19.5 6.16332 19.412 5.91665 19.2472C5.66997 19.0824 5.47771 18.8481 5.36418 18.574C5.25065 18.2999 5.22094 17.9983 5.27882 17.7074C5.3367 17.4164 5.47956 17.1491 5.68934 16.9393C5.89912 16.7296 6.16639 16.5867 6.45736 16.5288C6.74834 16.4709 7.04994 16.5006 7.32403 16.6142C7.59811 16.7277 7.83238 16.92 7.9972 17.1666C8.16203 17.4133 8.25 17.7033 8.25 18C8.24954 18.3977 8.09136 18.779 7.81016 19.0602C7.52895 19.3414 7.14768 19.4995 6.75 19.5ZM17.25 8.25H19.0056L20.6129 12H17.25V8.25ZM17.25 19.5C16.9533 19.5 16.6633 19.412 16.4166 19.2472C16.17 19.0824 15.9777 18.8481 15.8642 18.574C15.7506 18.2999 15.7209 17.9983 15.7788 17.7074C15.8367 17.4164 15.9796 17.1491 16.1893 16.9393C16.3991 16.7296 16.6664 16.5867 16.9574 16.5288C17.2483 16.4709 17.5499 16.5006 17.824 16.6142C18.0981 16.7277 18.3324 16.92 18.4972 17.1666C18.662 17.4133 18.75 17.7033 18.75 18C18.7495 18.3977 18.5914 18.779 18.3102 19.0602C18.0289 19.3414 17.6477 19.4995 17.25 19.5ZM21 17.25H20.1434C19.9782 16.6076 19.6045 16.0382 19.0808 15.631C18.5572 15.2239 17.9133 15.0019 17.25 15V13.5H21V17.25Z" fill="#2A254B"/>
+                    </svg>
+                    <h4 class="text-[1rem] text-[#2A254B] leading-[140%]">Next day as standard</h4>
+                    <p class="text-[14px] text-[#2A254B] leading-[140%]">Order before 3pm and get your order the next day as standard</p>                    
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="p-[1.5rem]">
+        <h3 class="text-[20px] text-[#2A254B] leading-[100%] my-[20px]">New ceramics</h3>
+        <div class="flex flex-wrap justify-between gap-[1rem]">
+            <div class="w-[47%] flex flex-col gap-[1rem]">
+                <img class="w-[100%]" src="./assets/Photo (1).png" alt="">
+                <h4 class="text-[20px] text-[#2A254B] leading-[100%] my-[20px]">The Dandy chair</h4>
+                <span class="text-[18px] text-[#2A254B]">£250</span>
+            </div>
+            <div class="w-[47%] flex flex-col gap-[1rem]">
+                <img class="w-[100%]" src="./assets/Photo (1).png" alt="">
+                <h4 class="text-[20px] text-[#2A254B] leading-[100%] my-[20px]">The Dandy chair</h4>
+                <span class="text-[18px] text-[#2A254B]">£250</span>
+            </div>
+
+            <div class="w-[47%] flex flex-col gap-[1rem]">
+                <img class="w-[100%]" src="./assets/Photo (1).png" alt="">
+                <h4 class="text-[20px] text-[#2A254B] leading-[100%] my-[20px]">The Dandy chair</h4>
+                <span class="text-[18px] text-[#2A254B]">£250</span>
+            </div>
+
+            <div class="w-[47%] flex flex-col gap-[1rem]">
+                <img class="w-[100%]" src="./assets/Photo (1).png" alt="">
+                <h4 class="text-[20px] text-[#2A254B] leading-[100%] my-[20px]">The Dandy chair</h4>
+                <span class="text-[18px] text-[#2A254B]">£250</span>
+            </div>
+        </div>
+        <button class="p-[1rem] text-[1rem] text-[#2A254B] bg-[#F9F9F9] col-span-full w-[100%] row-start-3 row-end-4 my-[2rem]">View collection</button> 
+
+
+    </section>
+
+
+    <section class="grid grid-cols-4">
+        <h2 class="text-[2rem] text-[#2A254B] text-left col-span-full">Our popular products</h2>
+        <div>
+            <div class="flex flex-col gap-[1rem] col-start-1 col-end-3">
+                <img class="w-[100%]" src="./assets/cardimage/soha.jpg" alt="">
+                <h4 class="text-[20px] text-[#2A254B] leading-[100%] my-[20px]">The Poplar suede sofa</h4>
+                <span class="text-[18px] text-[#2A254B]">£980</span>
+            </div>
+
+            <div class="flex flex-col gap-[1rem] col-start-3 col-end-4">
+                <img class="w-[100%]" src="./assets/cardimage/soha.jpg" alt="">
+                <h4 class="text-[20px] text-[#2A254B] leading-[100%] my-[20px]">The Poplar suede sofa</h4>
+                <span class="text-[18px] text-[#2A254B]">£980</span>
+            </div>
+            <div class="flex flex-col gap-[1rem] col-start-4 col-end-5">
+                <img class="w-[100%]" src="./assets/cardimage/soha.jpg" alt="">
+                <h4 class="text-[20px] text-[#2A254B] leading-[100%] my-[20px]">The Poplar suede sofa</h4>
+                <span class="text-[18px] text-[#2A254B]">£980</span>
+            </div>
+
+        </div>
+        
+        
+    </section>
+
+
+    <script src="main.js"></script>
 </body>
 </html>
